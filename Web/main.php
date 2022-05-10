@@ -16,6 +16,7 @@
 	<body>
 		<header>
 			<h1>Gerencia Livros</h1>
+			<a href="index.php">Sair</a>
 		</header>
 		<div id="content">
 			<div id="menu">
