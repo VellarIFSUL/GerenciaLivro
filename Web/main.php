@@ -1,3 +1,11 @@
+<?php
+	session_start();
+	if(isset($_SESSION['nome'])){
+		echo"Bem-vindo ".$_SESSION['nome'];
+	}else{
+		header('Location: index.php');
+	}
+?>
 <html>
 	<head>
 		<meta charset="utf-8">

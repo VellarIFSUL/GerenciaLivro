@@ -1,5 +1,11 @@
 <?php
-include_once("../conectar.php");
+    include_once("../conectar.php");
+    session_start();
+	if(isset($_SESSION['nome'])){
+		echo"Usuario: ".$_SESSION['nome'];
+	}else{
+		header('Location: index.php');
+	}
 ?>
 
 <html>
@@ -13,7 +19,7 @@ include_once("../conectar.php");
     <body>
         <header>
             <h1>Lista de Livros</h1>
-            <a href="../index.html">Home</a>
+            <a href="../main.php">Home</a>
         </header>
         <div id='content'>
             <form action="../edicao/EDlivro.php" method="post">

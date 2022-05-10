@@ -1,3 +1,11 @@
+<?php
+	session_start();
+	if(isset($_SESSION['nome'])){
+		echo"Usuario: ".$_SESSION['nome'];
+	}else{
+		header('Location: index.php');
+	}
+?>
 <html>
 	<head>
 		<meta charset="utf-8">
@@ -8,7 +16,7 @@
 	<body>
 		<header>
 			<h1>Cadastro de Aluno</h1>
-			<a href="../index.html">Home</a>
+			<a href="../main.php">Home</a>
 		</header>
 		<div id="content">
 			<form method="post" action="cadaluno.php">

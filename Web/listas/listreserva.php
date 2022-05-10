@@ -1,5 +1,11 @@
 <?php
     include_once("../conectar.php");
+    session_start();
+	if(isset($_SESSION['nome'])){
+		echo"Usuario: ".$_SESSION['nome'];
+	}else{
+		header('Location: index.php');
+	}
     if(isset($_POST['Devolve'])){
         $iddevolveR=$_POST['Devolve'];
         $iddevolveL=$_POST['idLivro'];
@@ -31,7 +37,7 @@
     <body>
         <header>
             <h1>Reservas</h1>
-            <a href="../index.html">Home</a>
+            <a href="../main.php">Home</a>
         </header>
         <div id='content'>
                 <h2>Em aberto<h2>

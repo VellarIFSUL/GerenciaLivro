@@ -1,5 +1,11 @@
 <?php
     include_once("../conectar.php");
+    session_start();
+	if(isset($_SESSION['nome'])){
+		echo"Usuario: ".$_SESSION['nome'];
+	}else{
+		header('Location: index.php');
+	}
     //Checagem de como se chegou a pagina
     if (isset($_POST['Edit'])) {
         //caso botão edit
@@ -33,7 +39,7 @@
     </head>
     <body>
         <?php
-            echo "<header><h1>$title</h1><a href='../index.html'>Home</a></header><div id='content'>";
+            echo "<header><h1>$title</h1><a href='../main.php'>Home</a></header><div id='content'>";
             //formularios apartir das listas
             if (isset($_POST['Edit'])) {
                 //caso botão editar
