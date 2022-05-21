@@ -53,8 +53,8 @@
                 $autor=$resultado['autor'];
                 $area=$resultado['area'];
                 echo "<form action'EDlivro.php' method='post'>";
-                echo "<label>Titulo:<input type='text' name='titulo' placeholder='$titulo' required></label>";
-                echo "<label>Autor: <input type='text' name='autor' placeholder='$autor' required></label>";
+                echo "<label>Titulo:<input type='text' name='titulo' value='$titulo' required>$titulo</label>";
+                echo "<label>Autor: <input type='text' name='autor' value='$autor' required>$autor</label>";
                 echo "<label>Area:<select name='id_area' required>";
 					$sql = "SELECT * FROM area";
 					$resultado=mysqli_query($conexao,$sql);

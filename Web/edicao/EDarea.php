@@ -50,7 +50,7 @@
                 $id=$resultado['id'];
                 $nome=$resultado['nome'];
                 echo "<form action'EDarea.php' method='post'>";
-                echo "<label>Titulo:<input type='text' name='nome' placeholder='$nome' required></label>";
+                echo "<label>Titulo:<input type='text' name='nome' value='$nome' required>$nome</label>";
                 echo "<button type='submit' name='Edited' value='$id'>Mudar</button>";
                 echo "</form></div>";
             }elseif(isset($_POST['Delete'])){

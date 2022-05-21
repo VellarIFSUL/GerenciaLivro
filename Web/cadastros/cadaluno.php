@@ -19,7 +19,8 @@
 			<a href="../main.php">Home</a>
 		</header>
 		<div id="content">
-			<form method="post" action="cadaluno.php">
+		<script src="../JS/ValidaCPF.js"></script>
+			<form method="post" action="cadaluno.php" id='forme'>
 				<label>
 					Nome:
 					<input type="text" name="nome" required>
@@ -30,7 +31,7 @@
 				</label>
 				<label>
 					CPF:
-					<input type="number" name="cpf" required>
+					<input type="text" id='cpf' name="cpf" required>
 				</label>
 				<label>
 					Data de Nascimento:
