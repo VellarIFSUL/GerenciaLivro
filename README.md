@@ -9,19 +9,19 @@ O trabalho foi feito utilizando PHP, MySQL, HTML, CSS e JS. Recomenda-se da util
 ## Estrutura de Arquivos
 Pasta Raiz
 >**BD** 
->> SQL IMPORT.sql -> Importação direta da Base de Dados
->> SQL INSTRUCTIONS.txt -> Comandos para a montagem da BD
+>> SQL IMPORT.sql -> Importação direta da Base de Dados  
+>> SQL INSTRUCTIONS.txt -> Comandos para a montagem da BD  
 >
 >**WEB**
->> **cadastros** -> Contem as paginas de cadastro de entidades
->>**edicao** -> Contem as paginas de edição/exclusão das entidades
->> **JS** -> Contem os arquivos em JavaScript
->> **listas** -> Contem as paginas de visualização de entidades
+>> **cadastros** -> Contem as paginas de cadastro de entidades  
+>>**edicao** -> Contem as paginas de edição/exclusão das entidades  
+>> **JS** -> Contem os arquivos em JavaScript  
+>> **listas** -> Contem as paginas de visualização de entidades  
 >
->conectar.php ->Ligação de todos arquivos com o BD 
->estilo.css -> Estilo das paginas
->index.php -> Pagina de login
->main.php -> Pagina de HUB para as funções
+>conectar.php ->Ligação de todos arquivos com o BD  
+>estilo.css -> Estilo das paginas  
+>index.php -> Pagina de login  
+>main.php -> Pagina de HUB para as funções  
 
 ## Primeiro Uso
 Não esqueça de cadastrar um aluno diretamente no BD para conseguir fazer o login e poder fazer o CRUD das demais entidades diretamente no sistema.
@@ -32,7 +32,7 @@ graph LR
 A[Aluno] --> B((Reserva)) -->C[Livro] --> D((Posui)) --> E[Area]
 ```
 #### Tabela com tipagem e atributos
-Chave Primaria - #
+Chave Primaria - #  
 Chave Estrangeira - @
 - Aluno
 
