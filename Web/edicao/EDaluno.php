@@ -42,7 +42,7 @@
     </head>
     <body>
         <?php
-            echo "<header><h1>$title</h1><a href='../main.php>Home</a></header><div id='content'>";
+            echo "<header><h1>$title</h1><a href='../main.php'>Home</a></header><div id='content'><script src='../JS/ValidaCPF.js'></script>";
             //formularios apartir das listas
             if (isset($_POST['Edit'])) {
                 //caso botão editar
@@ -54,10 +54,10 @@
                 $email=$resultado['email'];
                 $cpf=$resultado['cpf'];
                 $datanasc=$resultado['data_nasc'];
-                echo "<form action'EDaluno.php' method='post'>";
+                echo "<form action'EDaluno.php' method='post' id='forme'>";
                 echo "<label>Nome:<input type='text' name='nome' placeholder='$nome' required></label>";
                 echo "<label>Email:<input type='email' name='email' placeholder='$email' required></label>";
-                echo "<label>CPF:<input type='number' name='cpf' placeholder='$cpf' required></label>";
+                echo "<label>CPF:<input type='text' name='cpf' id='cpf' placeholder='$cpf' required></label>";
                 echo "<label>Nascimento: <input type='date' name='nasc' required>$datanasc</label>";
                 echo "<button type='submit' name='Edited' value='$editid'>Mudar</button>";
                 echo "</form></div>";

@@ -18,7 +18,7 @@
             header('Location: main.php');
 
         } else{
-            echo"Erro!";
+            echo"<script> window.onload = function LoginErro(){window.alert('Dados incorretos');}</script>";
         }
     }
 ?>
