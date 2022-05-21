@@ -55,10 +55,10 @@
                 $cpf=$resultado['cpf'];
                 $datanasc=$resultado['data_nasc'];
                 echo "<form action'EDaluno.php' method='post' id='forme'>";
-                echo "<label>Nome:<input type='text' name='nome' placeholder='$nome' required></label>";
-                echo "<label>Email:<input type='email' name='email' placeholder='$email' required></label>";
-                echo "<label>CPF:<input type='text' name='cpf' id='cpf' placeholder='$cpf' required></label>";
-                echo "<label>Nascimento: <input type='date' name='nasc' required>$datanasc</label>";
+                echo "<label>Nome:<input type='text' name='nome' value='$nome' required>$nome</label>";
+                echo "<label>Email:<input type='email' name='email' value='$email' required>$email</label>";
+                echo "<label>CPF:<input type='text' name='cpf' id='cpf' value='$cpf' required>$cpf</label>";
+                echo "<label>Nascimento: <input type='date' name='nasc' value='$datanasc' required>". date_format(date_create($datanasc),"d/m/Y")."</label>";
                 echo "<button type='submit' name='Edited' value='$editid'>Mudar</button>";
                 echo "</form></div>";
             }elseif(isset($_POST['Delete'])){
